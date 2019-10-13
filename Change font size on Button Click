@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>JS</title></head>
+<body>
+<h2>Change size On Button Click</h2>
+
+<p id="demo">Change me</p>
+
+<button type = "button" onclick = "document.getElementById('demo').style.fontSize='35px'">
+Click me 
+</button>
+
+</body>
+</html>
