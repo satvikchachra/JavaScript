@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplication Table</title>
+</head>
+<style type = "text/css">
+	td{
+		border:1px solid black;
+	}
+</style>
+<body>
+
+	<h1>Table</h1>
+</body>
+<script type="text/javascript">
+	var r = prompt("Enter no of rows : ");
+	var c = prompt("Enter no of columns : ");
+	var row = "<table cellspacing=0 cellpadding=20px>";
+	
+	for(var i = 1; i<=r; i++){
+		row = row + "<tr>";
+		for(var j = 1; j<=c; j++){
+			var e = i*j;
+			row +="<td>"+ e + "</td>";
+		}
+		row = row + "</tr>";
+	}
+
+	row = row + "</table>";
+	document.write(row);
+
+</script> 
+</html>
