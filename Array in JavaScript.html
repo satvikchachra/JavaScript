@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+</head>
+<body>
+	<div>
+		Enter length of array
+		<input type="text" id="len_arr">
+		<button onclick="addE()">add</button>
+		<button onclick = "printA()">print</button>
+		<button onclick="s_max()">2 MAX</button>
+		<button onclick="s_min()">2 MIN</button>
+	</div>
+
+	<div id = "pr">
+	</div>
+
+	<div id = "sr">	
+	</div>
+	
+	<script>
+		var arr = new Array();
+
+		function addE(){
+			var len = document.getElementById('len_arr').value;
+			for(var i = 0 ; i < len; i++){
+				arr[i] = prompt("Enter elements: ");
+			}
+		}
+
+		function printA(){
+			
+			var s =""; 
+			for(var j = 0 ; j < arr.length; j++){
+				s+=arr[j] + " ";
+			}
+			document.getElementById('pr').innerHTML=s;
+		}
+
+		function s_max(){
+			arr.sort();
+			for(var  i =0 ; i< arr.length ; i++){
+				arr[i] = parseInt(arr[i]) - parseInt(arr[arr.length-1]) 
+			}
+			printA();
+			//window.alert("2nd max = "+ second);
+
+		}
+
+		function s_min(){
+			var f = parseInt(arr[0]);
+			var s = parseInt(arr[1]);
+
+			for(var i = 0 ; i < arr.length ; i++){
+				if(parseInt(arr[i])<f){
+					s = f;
+					f = arr[i];
+				}
+				else if(parseInt(arr[i]) < s && parseInt(arr[i])!=f ){
+					s = arr[i];
+				}
+			}
+
+			window.alert("The 2nd smallest : " + s);
+		}
+	</script>
+
+</body>
+</html>
