@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>JS</title></head>
+<body>
+<h2>Show hidden text on Button Click</h2>
+
+<p id="demo" style="display:none;">You found me!</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">
+Click Me
+</button>
+
+</body>
+</html>
