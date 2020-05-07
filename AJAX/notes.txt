@@ -1,0 +1,38 @@
+client -> AJAX engine -> server
+
+client -> makes a JS call (our case) -> AJAX engine
+AJAX engine -> XmlHttpRequest (XHR) -> server
+
+server -> response XML/JSON -> AJAX engine
+AJAX engine -> HTML response -> client
+
+XHR Object
+- API in a form of Object
+- Provided by browser's JS environment
+- Methods transfer data between client and server 
+- Can be used with protocols other than HTTP
+- Can work with data other than XML. (JSON, plain text)
+
+Libraries and other Methods :
+- jQuery (DOM Manipulation library)
+- Axios
+- Superagent
+- Fetch API (Part of the browser)
+- Prototype
+- Node HTTP
+
+HTTP Statuses : 
+- 200 : OK
+- 403 : Forbidden
+- 404 : Not Found
+
+Ready states :
+- 0 : Request not initialized
+- 1 : Server connection established
+- 2 : Request received
+- 3 : Processing Request
+- 4 : Request finished and response is Ready
+
+
+
+
